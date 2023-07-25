@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Flota</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img width="70px" src="data:image/png;base64,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" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a class="hov" href="./cursos.html">Cursos</a></li>
+                <li><a class="hov" href="./flota.html">Flota</a></li>
+                <li><a class="hov" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="hov" href="./taller.html">Taller</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flota">
+      <div>
+        <h2>Nuestra Flota: Monomotores/Multimotores</h2>
+      </div>
+      <section class="sec-flota">
+        <div class="tabla">
+          <h3>TECNAM P2002</h3>
+          <div>
+            <img width="300px" src="https://tecnamair.com/wp-content/uploads/2017/04/p2002Sierra-exterior-7.jpg" alt="p2002">
+          </div>
+          <div class="div-t">
+            <h5>Especificaiones tecnicas</h5>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Tipo</td>
+                  <td>Monomotor terrestre (Mont-T)</td>
+                </tr>
+                <tr>
+                  <td>País de origen</td>
+                  <td>Italia</td>
+                </tr>
+                <tr>
+                  <td>Planta Motriz</td>
+                  <td>Rotax 912UL2-01</td>
+                </tr>
+                <tr>
+                  <td>Combustible</td>
+                  <td>UL91</td>
+                </tr>
+                <tr>
+                  <td>Consumo Promedio</td>
+                  <td>15 Lt/Hr</td>
+                </tr>
+                <tr>
+                  <td>Aviónica</td>
+                  <td>2 Garmin G3X Touch 10" COM/NAV GARMIN GNC255, Autopiot</td>
+                </tr>
+                <tr>
+                  <td>Autonomía</td>
+                  <td>6 Hs.</td>
+                </tr>
+                <tr>
+                  <td>Asientos</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Velocidad Crucero</td>
+                  <td>FL100 100Ktas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tabla2">
+          <h3>TECNAM P92 ECHO</h3>
+          <div>
+            <img width="300px" src="https://tecnam.com/wp-content/uploads/2020/12/P92-MKII-GIU00857-scaled.jpg" alt="p2002">
+          </div>
+          <div>
+            <h5>Especificaiones tecnicas</h5>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Tipo</td>
+                  <td>Monomotor terrestre (Mont-T)</td>
+                </tr>
+                <tr>
+                  <td>País de origen</td>
+                  <td>Italia</td>
+                </tr>
+                <tr>
+                  <td>Planta Motriz</td>
+                  <td>Rotax 912UL2-01</td>
+                </tr>
+                <tr>
+                  <td>Combustible</td>
+                  <td>UL91</td>
+                </tr>
+                <tr>
+                  <td>Consumo Promedio</td>
+                  <td>15 Lt/Hr</td>
+                </tr>
+                <tr>
+                  <td>Aviónica</td>
+                  <td>COM/NAV GNC255, Dynon SkyView 10″, Dynon EMS-D10, AP</td>
+                </tr>
+                <tr>
+                  <td>Autonomía</td>
+                  <td>6 Hs.</td>
+                </tr>
+                <tr>
+                  <td>Asientos</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Velocidad Crucero</td>
+                  <td>FL100 100Ktas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tabla3">
+          <h3>CESSNA C150L</h3>
+          <div>
+            <img width="300px" src="https://upload.wikimedia.org/wikipedia/commons/5/55/Cessna_150M_%28cropped%29.jpg" alt="p2002">
+          </div>
+          <div>
+            <h5>Especificaiones tecnicas</h5>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Tipo</td>
+                  <td>Monomotor terrestre (Mont-T)</td>
+                </tr>
+                <tr>
+                  <td>País de origen</td>
+                  <td>Estados Unidos</td>
+                </tr>
+                <tr>
+                  <td>Planta Motriz</td>
+                  <td>Continental 0-200-A</td>
+                </tr>
+                <tr>
+                  <td>Combustible</td>
+                  <td>AvGas 100L</td>
+                </tr>
+                <tr>
+                  <td>Consumo Promedio</td>
+                  <td>20 Lt/Hr</td>
+                </tr>
+                <tr>
+                  <td>Aviónica</td>
+                  <td>Analógica</td>
+                </tr>
+                <tr>
+                  <td>Autonomía</td>
+                  <td>5 Hs.</td>
+                </tr>
+                <tr>
+                  <td>Asientos</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td>Velocidad Crucero</td>
+                  <td>FL100 100Ktas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tabla4">
+          <h3>TECNAM P2006 MKII</h3>
+          <div>
+            <img width="300px" src="https://upload.wikimedia.org/wikipedia/commons/1/13/Tecnam_P2006T_1.jpg" alt="p2002">
+          </div>
+          <div>
+            <h5>Especificaiones tecnicas</h5>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Tipo</td>
+                  <td>Multimotor terrestre (Multi-T)</td>
+                </tr>
+                <tr>
+                  <td>País de origen</td>
+                  <td>Italia</td>
+                </tr>
+                <tr>
+                  <td>Planta Motriz</td>
+                  <td>2 Rotax 912S3-01</td>
+                </tr>
+                <tr>
+                  <td>Combustible</td>
+                  <td>UL91</td>
+                </tr>
+                <tr>
+                  <td>Consumo Promedio</td>
+                  <td>30 Lt/Hr</td>
+                </tr>
+                <tr>
+                  <td>Aviónica</td>
+                  <td>2X Garmin G950Nxi</td>
+                </tr>
+                <tr>
+                  <td>Autonomía</td>
+                  <td>6 Hs.</td>
+                </tr>
+                <tr>
+                  <td>Asientos</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>Velocidad Crucero</td>
+                  <td>FL100 135Ktas</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <h2>Redes</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+              </div>
+              <div class="col">
+                <h2>Direccion</h2>
+                Aerodromo de Moron - Castelar Buenos Aires, Av. Figueroa Alcorta 500
+              </div>
+              <div class="col">
+                <h2>Contacto</h2>
+                Email: contacto@gmail.com 
+                Tel: +54 9 343- 5230572
+              </div>
+            </div>
+          </div>
+          <p>©️ Copyright GoFly 2023 - Director: Matias Aguirre</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>      
+</body>
+</html>

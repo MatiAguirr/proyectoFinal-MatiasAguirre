@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Cursos</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img width="70px" src="data:image/png;base64,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" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a class="hov" href="./cursos.html">Cursos</a></li>
+                <li><a class="hov" href="./flota.html">Flota</a></li>
+                <li><a class="hov" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="hov" href="./taller.html">Taller</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="cursos">
+      <div class="card">
+        <img src="https://escuelaflying.com.ar/wp-content/uploads/2020/01/IMG-20190820-WA0043.jpg" class="card-img-top" alt="ppa">
+        <div class="card-body">
+          <h5 class="card-title">Piloto Privado de Avion</h5>
+          <p class="card-text">El curso oficial de Piloto Privado de Avion (PPA), esta dirigido a aquella personassin experiencia previa, que quieran volar como piloto al mando o copiloto en vuelos privados no remunerados.</p>
+          <a href="./nosotros.html" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://ccfprosario.com.ar/wp-content/uploads/requisitos-para-ser-piloto-en-bolivia-scaled.jpg" class="card-img-top" alt="pca">
+        <div class="card-body">
+          <h5 class="card-title">Piloto Comercial de Avion</h5>
+          <p class="card-text">Este curso oficial está dirigido a candidatos que desean hacer de la aviación comercial en líneas aéreas una profesión de futuro. Es un curso intensivo donde el ritmo es marcado por la escuela y el alumno es guiado en todo momento.</p>
+          <a href="./nosotros.html" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://xflight.us/argentina/wp-content/uploads/2021/10/Portada-3.jpg" class="card-img-top" alt="pca1">
+        <div class="card-body">
+          <h5 class="card-title">Piloto Comercial de Primera Clase</h5>
+          <p class="card-text">Todo piloto que quiera trabajar en una línea aérea comercial en Argentina, debe obtener la Licencia de Piloto Comercial de Primera Clase, además de ya contar con su Licencia de Piloto Comercial con habilitación HVI y habilitación de avión multimotor.</p>
+          <a href="./nosotros.html" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_520,h_380/https://www.fcaviacion.com.ar/wp-content/uploads/2020/07/instructor-vuelo.jpg" class="card-img-top" alt="iva">
+        <div class="card-body">
+          <h5 class="card-title">Instructo de Vuelo de Avion</h5>
+          <p class="card-text">La experiencia única de trabajar como Instructor de Vuelo de Avión te permitirá estar mejor preparado como futuro piloto profesional, adquirir una mayor madurez técnica, mayores conocimientos sobre el terreno y estar preparado para enfrentar de forma más resolutiva situaciones que puedan surgir durante el vuelo.</p>
+          <a href="./nosotros.html" class="btn btn-primary">Ver más</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://1.bp.blogspot.com/_uKF12JF3n2s/TO0wxFRtCfI/AAAAAAAABtU/oK0PVgIirEY/s1600/p2006-730277.jpg" class="card-img-top" alt="multi">
+        <div class="card-body">
+        <h5 class="card-title">Habilitacion Multimotor</h5>
+        <p class="card-text">Todos los alumnos que lo requieran, pueden obtener esta habilitación, con la cual el piloto podrá comandar aeronaves con más de un motor en condición de piloto al mando. Esta licencia habilita al piloto a realizar vuelos en aviones multimotores hasta un peso máximo de 5700 kg.</p>
+        <a href="./nosotros.html" class="btn btn-primary">Ver más</a>
+      </div>
+      </div>
+        <div class="card">
+        <img src="https://media.licdn.com/dms/image/C4E22AQHxAQJMSaQZjQ/feedshare-shrink_800/0/1579031738938?e=1691625600&v=beta&t=QdJx7GtzjlhoVlTkF0U8J3DRL_eVZVyLgDeQrs2_7tU" class="card-img-top" alt="tcp">
+        <div class="card-body">
+        <h5 class="card-title">Tripulante de Cabina de Pasajeros</h5>
+        <p class="card-text">El Tripulante de Cabina de Pasajeros es un recurso humano muy importante en una compañía aérea. Es el encargado de velar por la seguridad de los pasajeros, y a su vez, quien representa la imagen de la compañía frente sus clientes.</p>
+        <a href="./nosotros.html" class="btn btn-primary">Ver más</a>
+      </div>
+    </div>
+  </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <h2>Redes</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+              </div>
+              <div class="col">
+                <h2>Direccion</h2>
+                Aerodromo de Moron - Castelar Buenos Aires, Av. Figueroa Alcorta 500
+              </div>
+              <div class="col">
+                <h2>Contacto</h2>
+                Email: contacto@gmail.com 
+                Tel: +54 9 343- 5230572
+              </div>
+            </div>
+          </div>
+          <p>©️ Copyright GoFly 2023 - Director: Matias Aguirre</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>

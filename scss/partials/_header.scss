@@ -1,0 +1,31 @@
+.header{
+    background-color: #001C30;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    ul{
+        list-style-type: none;
+        text-transform: uppercase;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        li{
+            font-size: 13px;
+        padding: 5px;
+        margin: 10px;
+        background-color: #001C30;
+        border-radius: 10px;
+        a{
+            color: #64CCC5;
+            font-family: 'Kanit', sans-serif;
+            text-decoration: none
+            }
+        }
+    }
+
+}
+a:hover{
+    background-color: #001C30;
+    font-weight: bold;
+    text-decoration: none;
+}

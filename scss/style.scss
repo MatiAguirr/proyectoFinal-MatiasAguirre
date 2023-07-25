@@ -1,0 +1,266 @@
+@import "./partials/general";
+@import "./partials/header";
+@import "./partials/mainInicio";
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+/* MAIN CURSOS */
+.cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    margin: 25px;
+}
+.card h5{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    color: #428c87;
+}
+.card p{
+    font-family: 'Kanit', sans-serif;
+}
+/* -----MAIN FLOTA----- */
+.flota h2{
+    margin: 0 10px;
+    padding: 15px 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    color: #336461;
+}
+.flota h3{
+    margin: 0 20px;
+    padding: 10px 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}
+table h5{
+    margin: 20px;
+}
+.sec-flota{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tabla{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tabla2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tabla3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tabla4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* -----FOOTER----- */
+.footer{
+        background-color: #001C30;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+}
+.col{
+    color: aliceblue;
+    font-size: 15px;
+}
+.col h2{
+    color: #64CCC5;
+}
+.col a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.footer p{
+    color: aliceblue;
+    font-size: 10px;
+    padding: 10px 0 0 0;
+}
+
+@media (min-width: 426px){
+    // .main .container{
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    // .sec-img{ 
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+    .cursos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        width: 300px;
+    }
+    .sec-flota{
+        flex-direction: column;
+        align-items: center;
+    }
+    .tabla{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .tabla2{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .tabla3{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .tabla4{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+}
+
+@media (min-width: 769px){
+    // .seccion{
+    //     display: grid;
+    //     grid-template-rows: 1fr 1fr;
+    //     grid-template-areas:
+    //     "form form"
+    //     "alum horas";
+    //     align-items: center;
+    // }
+    // .form{
+    //     margin: auto;
+    //     grid-area: form;
+    // }
+    // .alum{
+    //     grid-area: alum;
+    //     margin: 0 15px 0 0;
+    // }
+    // .horas{
+    //     grid-area: horas;
+    //     margin: 0 0 0 15px;
+    // }
+    .cursos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        width: 250px;
+    }
+}
+
+@media (min-width: 1025px){
+    // .main img{
+    //     height: 300px;
+    // }
+    // .sec-img{
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr;
+    //     grid-template-areas:
+    //     "parrafo imagen"
+    //     "lista imagen";
+    // }
+    // .go p{
+    //     grid-area: parrafo;
+    // }
+    // .sec-img{
+    //     grid-area: imagen;
+    // }
+    // .go ul{
+    //     grid-area: lista;
+    // }
+    // .go{
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    // }
+    // .sec-img img{
+    //     margin: auto;
+    // }
+    .cursos{
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cursos .card{
+        width: 350px;
+    }
+    .sec-flota{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .flota{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .tabla{
+        width: 500px;
+    }
+    .tabla2{
+         width: 500px;
+    }
+    .tabla3{
+        width: 500px;
+    }
+    .tabla4{
+        width: 500px;
+    }
+}
+@media (min-width: 1441px){
+    .footer{
+        flex-direction: column;
+    }
+    .cursos{
+        width: 1550px;
+        margin: auto;
+    }
+    .flota{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .tabla{
+        margin: 0 100px 0 0;
+        width: 900px;
+    }
+    .tabla2{
+         margin: 0 0 0 100px;
+         width: 900px;
+    }
+    .tabla3{
+        margin: 0 100px;
+        width: 900px;
+    }
+    .tabla4{
+        margin: 0 0 0 100px;
+        width: 900px;
+    }
+    .sec-flota img{
+        width: 800px;
+    }
+}

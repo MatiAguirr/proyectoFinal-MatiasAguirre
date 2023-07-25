@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="shortcut icon" href="data:image/png;base64,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" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Nosotros</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <img width="70px" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAyVBMVEUJFjL///8AES84QVdobn0ABipaXWoAACPo6u0AABggKT/V19yVmqUAACgAAB4GFDFvdIIAAAgbIzr09fc/RFRNUmLDxs20t76rrrYABSsPGjSanKIIDSsAAB0AAAAGbJoJcp8PfKgWibQSga0ajrkflsFWXnAnpc4usdkPMkx/hZPq6+0uNkwPP14elL93fIcGT3YGO18JKEUJRGgGY48LNlcGWYQOSWo7QlUQTm4QX4SxtLsQQWCMj5kWb5W+wsogfqMbZ4gjiKwvkwvcAAAFeklEQVR4nO3dbVPiPBiG4RitIGyJggjUqIggooivPK66gvr/f9TTpKDQJn2BdXauzn1+2NmR0PagbdrizC7bzHfDS8bznbvFcp5DQvhIiB8J8SMhfiTEj4T4kRA/EuJHQvxIiB8J8SMhfiTEj4T4kRA/EuJHQvxIiB8J8SMhfiTEj4T4kRA/EuJHQvxIiB8J8SMhfiTEj4T4kRA/EuJHQvxIiB8J8SMhfiTEj4T4kRA/EuJHQvxIiB8J0RIy/JM8CYWUbHx7J5Z/mh+hkPcPj+2Tk4fQXsyL0PfdnrR94MldPoXSe2prny/M5VEqxieneRYKeXuqgLkVyvvJ2WmehXLc9oFa2G7/9zD2Qq/DC+X1mQIq4eMdk1KEB6AL5dNZIDx9HLPI/YwqXiicaCJhAM+0NNVsS4zvFYaVLgE7gbD9II2+BCF36tvh9lsLm+HwhAFLG1uNjNXV9Znj6PeG3zp/jzATA6BPfPEsvnihM2zUNsLVGiVnPsDdnJoGeI5xcXw/MlZXHCrXnvrrQSv8nmpZj7mpmJZYeOp09D78Ez390gi5F9181dWQzz8B84Di0LgXVxEy3irqj63uRhcon7paOPFigHHCwqt5izaabrBAd2oZcFj4a0LmnuuP8Sp67Mvnjm5yH+OLE/Jh0QLYYHqR/LdtQO0vCllhV486YCGifB6pXdh5iduBsUKnrj684tuvaJ5eprOtBpRNA4xzn6juGtuqijghqzSDA6OytFD53O12NTDWlyx8PS5EC1YVCJt71gERomss+DjsQs4PNHFr8ciQ192REiYCE4UN4yS2KLQPyJRdyJxSMNtsf8828s9opPbhUyIQQujPNnonlvn8VFR7UAmT9+APCIXK/AZh+Ffvv16ME7LKTTDbtIIly8Gop4QvxhktvJmphdxyHi4LBfPvUDwjUYhSNdLX0FihcIIrV3AZkoOODxyNXuIn0axCvn/4FVuYS5eFwm1eFYsZrhY383MrVsj4kb63eVOj5X2np4Sp9mAGobv7vVketwmZq+c946G9jpA5+8XZLhTee08JJynOwR8RTn9GyArbG6/qiijke98X9ia2sx1WKNx6Va1WTgJgwp3MPxQWG0udz59DKtNGY/pmf7hUj2r+H4UXDTyLvxddSciH53718rrC5nGlUjmqzP/4ftBSP0icO3ygEnYsd01GR/qrhXrW3musLVznDkGOFbDfHaScZfRmZrviH03/pVAOer6w37vPAIQSCq/b9+v9yQJMFh7vLHYcPUpDA5Kuh1bhjqWj+amqrhOq53RX+mQh379SW1RebnEu1R9BzTRgBeFOsWypPv8y7uNCAVPeyqQRzr4EilbkwTN+yfaMXzZOdfHCPcuy/Iem4CIpn/UenBi+sFlRyAqXlnVezlZSeLMM2DVuxXpCOdDA99RX+hRCVmgYV9nks5WIlvmrqMOWcStWFqqjVHif6hj9ZFmBsULh3kyL4aY37teNB3ffDkIvX5Wnu5bLMf9d81//ZTmNdmqRVc3Stz1Hnxe+sJflQphC6BOdamm5KnfF4gAeGeDYThTB9OuWncBLtjw1jX5cKOF1dmDib2YiD+WhDYw+t9sPIxH7svU/v1PvHPR94UWaLy0iYfzuKRB+VDKfhAxKuMIso8IR9jNfJ4JghP1sd6PfoQgvMt6Nfoci/FhxD8IIPfNXsGnCEK42iwaBCNeIhPiRED8S4kdC/EiIHwnxIyF+JMSPhPiRED8S4kdC/EiIHwnxIyF+JMSPhPiRED8S4kdC/EiIHwnxIyF+JMSPhPiRED8S4kdC/EiIHwnxIyF+JMSPhPiRED8S4kdC/EiIHwnxIyF+JMSPhPiRED8S4ucLrf9waD5yt9hmvhte/g8/Lpw4J/BnrAAAAABJRU5ErkJggg==" alt="logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a class="hov" href="./cursos.html">Cursos</a></li>
+                <li><a class="hov" href="./flota.html">Flota</a></li>
+                <li><a class="hov" href="./nosotros.html">Nosotros</a></li>
+                <li><a class="hov" href="./taller.html">Taller</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="nosotros">
+      <div class="container-n">
+        <div>
+          <div>
+            <h2>Nosotros</h2>
+          </div>
+          <div class="img-n">
+            <p>Somos una escuela de aviación, que nació en el año 2013 con el sueño de un piloto de formar grandes profesionales del mundo aeronáutico. Comenzamos a operar en el aeródromo de la ciudad de Castelar, provincia de Buenos Aires, Argentina. En un principio nuestra flota estaba compuesta de un solo avión, con el cual empezamos a materializar nuestro sueño.
+                Con el paso de los años, construimos nuestro propio hangar, escuela teórica e incrementamos y renovamos nuestra flota; y consolidamos un grupo de instructores altamente capacitados. La calidad y calidez de instrucción, la mejora y crecimiento constante, son los pilares fundamentales que nos acompañan desde la apertura de nuestras puertas. En GoFly podrás estudiar todas las carreras relacionadas al mundo aeronáutico, ya que poseemos las habilitaciones necesarias para que alcances tu objetivo. Contamos con diversas modalidades de estudio, para que puedas elegir la que mejor se adapte a tus necesidades.
+              </p>
+              <img width="400px" src="https://desdeelpatio.us/img_grandes/20210628103329-1108.jpeg" alt="avionMoron">
+          </div>
+        </div>   
+      </div>
+      <div class="container-m">
+        <div class="modalidades">
+          <div>
+            <h3>Modalidad Presencial</h3>
+            <p>Modalidad de cursado regular de los cursos oficiales en nuestra Escuela Teórica y prácticas de vuelo en el hangar del Aeropuerto de Moron</p>
+        </div>
+        <div>
+          <h3>Modalidad on-line</h3>
+          <p>A través de distintas plataformas de educación, podrás realizar el cursado regular de nuestros cursos respetando un horario específico con el docente para realizar la clase.</p>
+        </div>
+        <div>
+          <h3>Modalidad online sobre plataforma virtual E-learning</h3>
+          <p>Con el modelo de educación a distancia (online a través de nuestro campus virtual) se podrá obtener mayor flexibilidad y se pondrán en juego un conjunto de recursos humanos, didácticos y tecnológicos que fomentarán el aprendizaje colaborativo. Los alumnos estarán en continuo contacto con la Institución, su equipo docente y sus compañeros de estudio. Al acceder al campus se encontrará disponible todo el material de estudio.</p>
+        </div>
+      </div>
+      <div class="container-l">
+        <div>
+          <h2>¿Por qué estudiar en GoFly</h2>
+          Poseemos una estructura integral para un completo desarrollo profesional, donde podrás, no solamente estudiar la carrera que desees, sino también vincularla con el resto de las actividades y servicios que ofrecemos como empresa.
+        </div>
+        <div class="lista">
+          <div>
+            <h3>Brindamos</h3>
+          </div>
+          <div>
+            <ul>
+              <li>Formación con estándares de línea aérea. Nuestro equipo de profesionales y planes de estudio están a la altura de lo último en el mundo aeronáutico. Tu capacitación está garantizada y controlada con un sistema de seguimiento individual a través de un tutor.</li>
+              <li>Amplia flota de aviones de última generación, cada uno con el mejor equipamiento del mercado.</li>
+              <li>Mantenimientos exhaustivos de toda nuestra flota para garantizar la seguridad en cada vuelo.</li>
+              <li>Medios de pago y facilidades para poder pagar tus estudios.</li>
+              <li>Plataforma de estudio e-learning con novedosas técnicas de aprendizaje para desarrollar tu carrera.
+                  Material de estudio de autoría propia.</li>
+              <li>Kit de bienvenida compuesto por uniformes (pantalón y camisa), material de estudio impreso, libro de vuelo y merchandising.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="row align-items-start">
+              <div class="col">
+                <h2>Redes</h2>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+              </div>
+              <div class="col">
+                <h2>Direccion</h2>
+                Aerodromo de Moron - Castelar Buenos Aires, Av. Figueroa Alcorta 500
+              </div>
+              <div class="col">
+                <h2>Contacto</h2>
+                Email: contacto@gmail.com 
+                Tel: +54 9 343- 5230572
+              </div>
+            </div>
+          </div>
+          <p>©️ Copyright GoFly 2023 - Director: Matias Aguirre</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
