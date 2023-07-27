@@ -1,24 +1,25 @@
 @import "./partials/general";
 @import "./partials/header";
 @import "./partials/mainInicio";
+@import "./partials/mainCursos";
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 /* MAIN CURSOS */
-.cursos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card{
-    margin: 25px;
-}
-.card h5{
-    font-family: 'Kanit', sans-serif;
-    font-size: 25px;
-    color: #428c87;
-}
-.card p{
-    font-family: 'Kanit', sans-serif;
-}
+// .cursos{
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+// .card{
+//     margin: 25px;
+// }
+// .card h5{
+//     font-family: 'Kanit', sans-serif;
+//     font-size: 25px;
+//     color: #428c87;
+// }
+// .card p{
+//     font-family: 'Kanit', sans-serif;
+// }
 /* -----MAIN FLOTA----- */
 .flota h2{
     margin: 0 10px;
@@ -104,14 +105,14 @@ table h5{
         display: flex;
         flex-direction: column;
     }
-    .cursos{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .card{
-        width: 300px;
-    }
+    // .cursos{
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    // }
+    // .card{
+    //     width: 500px;
+    // }
     .sec-flota{
         flex-direction: column;
         align-items: center;
@@ -160,14 +161,14 @@ table h5{
     //     grid-area: horas;
     //     margin: 0 0 0 15px;
     // }
-    .cursos{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .card{
-        width: 250px;
-    }
+    // .cursos{
+    //     flex-direction: row;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    // }
+    // .card{
+    //     width: 300px;
+    // }
 }
 
 @media (min-width: 1025px){
@@ -198,15 +199,15 @@ table h5{
     // .sec-img img{
     //     margin: auto;
     // }
-    .cursos{
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .cursos .card{
-        width: 350px;
-    }
+    // .cursos{
+    //     flex-direction: row;
+    //     align-items: center;
+    //     flex-wrap: wrap;
+    //     justify-content: center;
+    // }
+    // .cursos .card{
+    //     width: 350px;
+    // }
     .sec-flota{
         flex-direction: row;
         flex-wrap: wrap;
@@ -235,10 +236,10 @@ table h5{
     .footer{
         flex-direction: column;
     }
-    .cursos{
-        width: 1550px;
-        margin: auto;
-    }
+    // .cursos{
+    //     width: 1550px;
+    //     margin: auto;
+    // }
     .flota{
         flex-direction: column;
         flex-wrap: wrap;
