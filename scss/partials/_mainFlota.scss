@@ -1,0 +1,84 @@
+.flota{
+    h2{
+        margin: 0 10px;
+        padding: 15px 0;
+        font-family: 'Kanit', sans-serif;
+        font-size: 30px;
+        color: #336461;
+        text-align: center;
+    }
+    h3{
+        margin: 0 20px;
+        padding: 10px 0;
+        font-family: 'Kanit', sans-serif;
+        font-size: 25px;
+        text-align: center;
+    }
+    .sec-flota{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .tabla{
+            background-color: #FAF3F0;
+            margin: 15px;
+            border-radius: 10px;
+            border: 2px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            .div-t{
+                h5{
+                  text-align: center;
+                  text-decoration: underline;
+                  padding: 10px;  
+                }
+                table{
+                    margin: 15px;
+                    text-align: center;
+                    tr, td{
+                        border: 1px solid;
+                        font-family: 'Kanit', sans-serif;
+                        padding: 3px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 426px){
+    .sec-flota{
+        justify-content: center;
+    }
+        .tabla{
+            width: 480px;
+    }   
+}
+@media (min-width: 769px){
+    .sec-flota{
+        align-items: stretch;
+        justify-content: center;
+        .tabla{
+            width: 480px;
+        }
+    }
+}
+@media (min-width: 1025px){
+    .sec-flota{
+        justify-content: space-evenly;
+        .tabla{
+            width: 690px;
+            tr, td{
+                width: 400px;
+            }
+        }
+    }  
+}
+@media (min-width: 2159px){
+    .sec-flota{
+       .tabla{
+        width: 825px;
+       }
+    }
+}

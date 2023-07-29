@@ -1,0 +1,96 @@
+.m-t{
+    .taller{
+        h2{
+            font-family: 'Kanit', sans-serif;
+            color: #336461;
+            font-size: 40px;
+            margin: 15px;
+            text-align: center;
+        }
+        h3{
+            font-family: 'Kanit', sans-serif;
+            color: black;
+            font-size: 30px;
+            margin: 15px;
+            text-align: center;
+        }
+        p{
+            font-family:  'Kanit', sans-serif;
+            margin: 15px;
+            text-align: center;
+            font-size: 25px;
+        }
+        ul{
+            margin: 15px;
+            li{
+                font-family: 'Kanit', sans-serif;
+                font-size: 20px;
+                margin: 15px;
+            }
+        }
+    }
+    .contacto{
+        h4{
+            font-family: 'Kanit', sans-serif;
+            color: #336461;
+            font-size: 40px;
+            margin: 15px;
+            text-align: center;
+        }
+        .formu{
+            border: 1px solid;
+            border-radius: 10px;
+            background-color: #FAF3F0;
+            margin: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            input{
+                margin: 15px;
+                border: 1px solid;
+                border-radius: 10px;
+                font-size: 20px;
+                height: 70px;
+                }
+            }
+        }  
+    }
+    @media (min-width: 426px){
+        .m-t{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            .taller{
+                border: 1px;
+
+            }
+            .contacto{
+                .formu{
+                    width: 500px;
+                }
+            }
+        }
+    }
+    @media (min-width: 769px){
+        .m-t{
+            align-items: center;
+            .taller{
+                div{
+                    border: 1px;
+                    margin: 15px;
+                    width: 400px
+                }
+            }
+        }
+    }
+    @media (min-width: 1025px){
+        .m-t{
+            justify-content: space-evenly;
+            .taller{
+                div{
+                    width: 500px
+                }
+            }
+        }
+    }

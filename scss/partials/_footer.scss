@@ -1,0 +1,35 @@
+.footer{
+    background-color: #001C30;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    .col{
+        color: aliceblue;
+        font-size: 15px;
+        h2{
+            color: #64CCC5;
+        }
+        a{
+          text-decoration: none;
+          color: aliceblue;  
+        }
+    }
+    p{
+        color: aliceblue;
+        font-size: 10px;
+        padding: 10px 0 0 0;
+    }
+}
+@media (min-width: 426px){
+    .col{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1441px){
+     .footer{
+        flex-direction: column;
+    }
+}
