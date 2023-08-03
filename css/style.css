@@ -243,10 +243,11 @@ small:hover {
   .cursos .card {
     width: 420px; } }
 
-@media (min-width: 1441px) {
+@media (min-width: 1800px) {
   .cursos {
-    width: 1550px;
-    margin: auto; } }
+    margin: auto; }
+    .cursos .sec-cards {
+      width: 1875px; } }
 
 .flota {
   background-color: #ebf4f0; }

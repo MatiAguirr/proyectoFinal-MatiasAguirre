@@ -57,9 +57,11 @@
         }
     }
 }
-@media (min-width: 1441px){
-    .cursos{
-        width: 1550px;
+@media (min-width: 1800px){
+    .cursos{ 
         margin: auto;
+        .sec-cards{
+            width: 1875px;
+        }
     }
 }
