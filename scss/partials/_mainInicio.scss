@@ -1,24 +1,31 @@
 .main{
-    background-image: url(https://i.pinimg.com/originals/6b/7f/d7/6b7fd734728e55e229cb06b79d12dd27.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: rgb(235, 244, 240);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    .titulo{
+        background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(https://www.argentina.gob.ar/sites/default/files/avion_despegando.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 2561px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: $amariblan;
+            font-size: 70px;
+            margin: 5px;
+            text-align: center;
+            font-family: 'Kanit', sans-serif;
+        }
+    }
     .container{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        h1{
-            color:#d0e6ed;
-            font-size: 50px;
-            margin: 5px;
-            text-align: center;
-            font-family: 'Kanit', sans-serif;
-            
-        }
     }
 }
 .tag{
@@ -33,7 +40,7 @@
     } 
 }
 small:hover{
-    background-color: #EEE3CB;
+    background-color: $amariblan;
     color: #001C30;
     font-weight: normal;
     text-decoration: none;
@@ -55,24 +62,44 @@ small:hover{
         }
     }
 }
-.alum div{
+.alum{
+    border: 1px solid;
+    border-radius: 15px;
     background-color: #001C30;
     margin: 15px;
-    padding: 8px;
-    color: #EEE3CB;
-    text-transform: uppercase;
-    border-radius: 10px;
-    text-align: center;
+    img{
+        border-radius: 10px;
+        margin: 8px;
+    }
+    div{
+        font-size: 25px;
+        margin: 5px;
+        padding: 8px;
+        color: #EEE3CB;
+        text-transform: uppercase;
+        border-radius: 10px;
+        text-align: center;
+    }
 }
-.horas div{
+.horas{
+    border: 1px solid;
+    border-radius: 15px;
     background-color: #001C30;
     margin: 15px;
-    padding: 8px;
-    color: #EEE3CB;
-    text-transform: uppercase;
-    border-radius: 10px;
-    text-align: center;
-}
+    img{
+        border-radius: 10px;
+        margin: 8px;
+    }
+    div{
+        font-size: 25px;
+        margin: 5px;
+        padding: 8px;
+        color: #EEE3CB;
+        text-transform: uppercase;
+        border-radius: 10px;
+        text-align: center;
+    }
+} 
 .fly{
     padding: 10px 0;
     .sec-img{
@@ -91,7 +118,7 @@ small:hover{
         font-family: 'Kanit', sans-serif;    
         }
         p{
-            color: aliceblue;
+            color: $azul;
             text-align: start;
             margin: 15px;
             padding: 15px 0;
@@ -99,10 +126,9 @@ small:hover{
             font-family: 'Kanit', sans-serif; 
     }
     ul{
-        list-style-type: none;
-        text-transform: uppercase;
+        list-style-type: disc;
         li{
-            color: #64CCC5;
+            color: #001C30;
             font-family: 'Kanit', sans-serif;
             font-size: 20px;
             padding: 10px;
@@ -155,7 +181,7 @@ small:hover{
         .sec-img{
             display: grid;
             grid-template-columns: 1fr 1fr;
-           grid-template-areas:
+            grid-template-areas:
             "parrafo imagen"
             "lista imagen";
             justify-items: center;

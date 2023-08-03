@@ -1,23 +1,23 @@
 .footer{
-    background-color: #001C30;
+    background-color: $azul;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     .col{
-        color: aliceblue;
+        color: $blanco;
         font-size: 15px;
         h2{
-            color: #64CCC5;
+            color: $verde-agua;
         }
         a{
           text-decoration: none;
-          color: aliceblue;  
+          color: $blanco;  
         }
     }
     p{
-        color: aliceblue;
+        color: $blanco;
         font-size: 10px;
         padding: 10px 0 0 0;
     }

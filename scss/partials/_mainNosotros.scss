@@ -1,12 +1,24 @@
 .nosotros{
-    .container-n{
-        h2{
-            font-size: 60px;
-            font-family: 'Kanit', sans-serif;
-            color: #336461;
+    background-color: rgb(235, 244, 240);
+    .titulo{
+        background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(https://www.argentina.gob.ar/sites/default/files/avion_despegando.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: -webkit-fill-available;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: $amariblan;
+            font-size: 70px;
+            margin: 5px;
             text-align: center;
-            margin: 15px;
+            font-family: 'Kanit', sans-serif;
         }
+    }
+    .container-n{
         p{
             font-family: 'Kanit', sans-serif;
             margin: 15px;

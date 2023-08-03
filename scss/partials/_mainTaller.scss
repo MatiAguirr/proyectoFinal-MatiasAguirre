@@ -1,12 +1,25 @@
 .m-t{
-    .taller{
-        h2{
-            font-family: 'Kanit', sans-serif;
-            color: #336461;
-            font-size: 40px;
-            margin: 15px;
+    background-color: rgb(235, 244, 240);
+    .titulo{
+        background-image: linear-gradient(rgba(57, 81, 68, 0.7), rgba(57, 81, 68, 0.7)), url(https://www.argentina.gob.ar/sites/default/files/avion_despegando.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: -webkit-fill-available;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            color: $amariblan;
+            font-size: 70px;
+            margin: 5px;
             text-align: center;
+            font-family: 'Kanit', sans-serif;
         }
+    }
+    .taller{
+        
         h3{
             font-family: 'Kanit', sans-serif;
             color: black;
